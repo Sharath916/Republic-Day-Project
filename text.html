@@ -1,0 +1,946 @@
+<html>
+  <head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <title>Republic Day Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+     
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+#more {display: none;}
+
+.comment {
+	width: 370px;
+	background-color: none;
+	margin: 5px;
+  max-lines: 3;
+}
+a.morelink {
+	text-decoration:none;
+	outline: none;
+}
+.morecontent span {
+	display: none;
+
+}
+.hero{
+    width: 109.9%;
+    height: 121%;
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*nav bar*/
+nav{
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("https://thumbs.dreamstime.com/b/banner-vintage-background-web-header-template-website-design-simple-design-sity-srteet-art-94297342.jpg");
+    position: flex;
+    padding: 20px 10%;
+    display:inline-block;
+    align-items: space-between;
+    justify-content: space-between;
+}
+#myVideo {
+  position: absolute;
+  right: -1px;
+  left: -50px;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  max-height: 110%;
+  max-width: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 10;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: rgb(221, 221, 221);
+  color: black;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(11, 11, 11);
+  background-image: url();
+  display: flex;
+  -moz-box-align: w3-center;
+  background-color: transparent;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: rgb(255, 255, 255);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+#more {display: none;}
+.container {
+  border-radius: 5px;
+  background-color: black;
+  padding: 20px;
+}
+
+    h1,h2,h3,h4,h5,h6 {font-family: "Roboto"}
+    body {font-family: "Source Sans Pro"}
+    body {
+  background-image: url('https://images.unsplash.com/photo-1611725450473-d18c7b751c59?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cmVwdWJsaWMlMjBkYXl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60.jpg');
+  background-repeat: no-repeat;
+  background-attachment: flex;  
+  background-size: cover;
+}
+
+/*Republic day photos*/
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+} 
+
+.collapsible {
+  background-color: transparent;
+  color: rgb(91, 250, 6);
+  cursor: pointer;  
+  padding: 17px;
+  width: 15%;
+  Height: 7%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 14px;
+  font-weight: 100px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 10px;
+  display: none;
+  color: #000;
+  overflow: hidden;
+  width: 55%;
+  text-align: left;
+  font-size: 19px;
+  background-color: transparent;
+}
+
+#HISTORY{
+  background-image: url("https://wallpaperaccess.com/full/379699.jpg");
+}
+
+#Gallery{
+  background-image: url("https://media.istockphoto.com/id/1367242566/photo/cream-concreted-wall-for-interiors-or-outdoor-exposed-surface-polished-concrete-cement-have.jpg?b=1&s=170667a&w=0&k=20&c=mMOIyIv40GF2Flv4-LEO7AOftLXdzqSWS_2KtZGy7uY=");
+}
+#FreedomFighter{
+  background-image: url("https://i.pinimg.com/originals/a3/4f/a7/a34fa7ed69ed7568d1f34af5f04c8ad3.jpg");  
+}
+#Facts{
+  background-image: url("https://wallpaperaccess.com/full/2381638.png");  
+}
+#India{
+  background-image: url("https://media.istockphoto.com/id/843127588/photo/textured-watercolor-beige-brown-sepia-toned-abstract.jpg?b=1&s=170667a&w=0&k=20&c=zjrryQKnXLzvcYgwSm8rCQ6XIN2apCznybCqvpEOHMw=");
+
+}
+#w3-top{
+  background-image: url("https://as2.ftcdn.net/v2/jpg/03/63/89/53/1000_F_363895348_iNCNGBT6ApCaaUeSytDjcZt1PMrijN3H.jpg");
+}
+#Register{
+  background-image: url("https://img.freepik.com/free-photo/texture-background_1404-99.jpg?w=2000");
+  image-resolution: 100px;
+  border-image-width: 150%;
+}
+.name{
+  float:left
+}
+header{
+  font-family: "Aclonica";
+  font-size: 13px;
+  
+}
+#India{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 8px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  font-size: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 11px 15px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:400px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+#button{
+  text-decoration: none;
+}
+    </style>
+  </head>
+<body class="w3-light-white w3-margin">
+
+<!-- Navigation bar with links -->
+<div class="topnav">
+<header class="header"  id="top" width="100vh"height="100%">
+  <div class="w3-top"style="background-image:https://thumbs.dreamstime.com/b/banner-vintage-background-web-header-template-website-design-simple-design-sity-srteet-art-94297342.jpg">
+      <div class="w3-bar w3-black w3-card">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>  
+        <button type="button" class="collapsible" style="font-size: 8.5px;"><b>HAPPY REPUBLIC DAY</b></button>
+        <div class="content">
+          <p>Freedom is not to be free from any ruler however it is to be free from all the foundations whether they are physical, social, political, psychological or intellectual. Let us see a dream at this republic day; One Nation, One Vision, and One Identity Happy Republic Day All.</p>
+        </div>
+        <button type="button" class="collapsible" font-family=""style="font-size: 8.5px;"><b>NATIONAL ANTHEM</b></button>
+        <div class="content">
+          <p>Jana gana mana adhinaayak jaya hai
+            Bhaarat bhagya vidhaata
+            Panjaab, sindh, gujraat, maraatha
+            Draavid utkal banga
+            Vindya, himaachal, yamuna, ganga
+            Utchchhal jaldhi taranga
+            Tab shubh naame jaage
+            Tab shubh aashish maage
+            Gaahe tab jay gaatha
+            Jana gana mangal daayak jay he
+            Bhaarat bhagya vidhaata
+            Jaya hey...
+            Jaya hey...
+            Jaya hey...
+            Jaya jaya jaya jaya hey...</p>
+        </div>
+        <span class="w3-right">
+        <a href="#top" class="w3-bar-item w3-button w3-padding-large w3-hide-small"style="font-size: 8.2px;"><b>HOME</b></a>
+        <a href="#History" class="w3-bar-item w3-button w3-padding-large w3-hide-small"style="font-size: 8.2px;"><b>HISTORY OF REPUBLIC DAY</b></a>
+        <a href="#India" class="w3-bar-item w3-button w3-padding-large w3-hide-small"style="font-size: 8.2px;"><b>ABOUT INDIA</b></a>
+        <a href="#FreedomFighter" class="w3-bar-item w3-button w3-padding-large w3-hide-small"style="font-size: 8.2px;"><b>FREEDOM FIGHTERS</b></a>
+        <a href="#Gallery" class="w3-bar-item w3-button w3-padding-large w3-hide-small"style="font-size: 8.2px;"><b>GALLERY</b></a>
+        <div class="dropdown">
+          <button class="dropbtn" style="font-size: 12px;"style="font-size: 8px;">DONATE BLOOD
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#Facts"><u>Facts about Blood Donating</u></a>
+            <a href="#Register">Register</a>
+          </div>
+        </div> 
+        <a href="#Facts" class="w3-bar-item w3-button w3-padding-large w3-hide-small"><b></b></a>
+      </span>
+      </div>
+    </div>
+  </div>
+<!-- Video -->
+
+<div href="#Home" class="w3-content" style="max-width:3200px">
+  <div class="hero">
+    <video  width="1600" height="240" autoplay unmuted loop id="myVideo">
+      <source  src="static/video1.mp4" type="video/mp4">
+    </video>
+    
+  <!-- Image header -->
+    <div class="w3-display-left w3-padding-large">
+      <h1 class="w3-wide" class="w3-opacity" style="font-style: Alfa Slab One;font-size: 31px;color: #fa0606;font-weight: 100px;"><b><i>DONATE BLOOD - CELEBRATE THIS REPUBLIC DAY BY SAVING LIVES</i></b></h1>
+      <h6><button class=" w3-round w3-pale-red w3-padding-large "style="text-decoration: none;"><a href="#Facts" >Facts about Blood Donating</a></button></h6>
+      <h6><button style="text-decoration: none;" class=" w3-round w3-pale-red w3-padding-large w3-large w3-hover-opacity-off"><a href="#Register">Register Here</a></button></h6>
+    </div>
+  </div>
+</div>
+
+  </header>
+
+  <!-- Grid / History -->
+  <div class="w3-white" id="History">
+    <div class="body">
+    <div class="w3-container"style="background-image: https://wallpapers.oneindia.com/ph-1024x768/2016/01/republic-day-wallpapers-images-free-download-republic-day-wallpapers_145319232020.jpg;">
+      <div class="w3-center w3-padding-32">
+      <h2 class="w3-wide" class="w3-opacity" style="font-style: Alfa Slab One;font-size: 30px;color: #e60909;"><b>Republic Day: Know The History And Significance Of January 26, And A Few Interesting Facts About The Day</b> </h2>
+      <p class="w3-left-align w3-text-black"style="font-style: Alfa Slab One;font-size: 19.4px;"><b>
+        New Delhi: Republic Day marks the adoption of the constitution of India and the transition of the country to a republic on January 26, 1950. Every year, the celebrations marking the day feature spectacular military and cultural pageantry. In New Delhi, armed forces personnel march along the Rajpath, in an elaborate display of military might. The epic show on Rajpath eclipses everything else happening across the country on this auspicious day.
+      </b></p>
+      <h2 class="w3-wide" class="w3-wide" class="w3-opacity" style="font-style: Alfa Slab One;font-size: 30px;color: #220ef7;"><b> <i>History</i></b></h2>
+      <p class="w3-left-align w3-text-black"style="font-style: Alfa Slab One;font-size: 19.4px;"><b>
+        While our Independence Day celebrates freedom from British Rule, Republic Day commemorates the constitution coming into force. January 26 was the chosen date since it was on this day in 1929 that the Indian National Congress issued the Declaration of Indian Independence (Purna Swaraj), opposing the British Regime's Dominion status.
+      </b></p>
+      <p class="w3-left-align w3-text-black"style="font-style: Alfa Slab One;font-size: 19.4px;"><b>
+        On August 15, 1947, India achieved independence. A committee was created a few days later, on August 29, to draft a permanent constitution for independent India. Dr BR Ambedkar was made chairman of the committee. On November 4, 1947, the committee drafted the constitution and submitted it to the Constituent Assembly. The Assembly met in numerous sessions for nearly two years before finally adopting the Constitution. On January 24, 1950, the 308 members of the Assembly signed two handwritten versions of the agreement -- one in Hindi and one in English -- after much deliberation and a few changes.The constitution came into effect two days later, on January 26, 1950. Dr Rajendra Prasad began his first tenure as President of the Indian Union on that day.
+      </b>  
+      </p>    
+    <h2 class="w3-wide"class="w3-wide" class="w3-opacity" style="font-style: Alfa Slab One;font-size: 30px;color: #1009e6;"><b><i>Significance </i></b></h2>
+      <p class="w3-left-align w3-text-black"style="font-style: Alfa Slab One;font-size: 19.4px;"><b>
+        India's constitution, which was formally adopted in 1950, replaced the British colonial Government of India Act (1935) as the country's governing text.
+      </b></p>
+      <p class="w3-left-align w3-text-black"style="font-style: Alfa Slab One;font-size: 19.4px;"><b>
+        On January 26, 1950, the Preamble to the Constitution of India -- a statement presenting the key principles of the Constitution -- came into effect. This completed the country's transition to a sovereign republic. The Constitution establishes fundamental rights that should be enjoyed by all citizens of this country, regardless of their political beliefs. It also establishes some fundamental duties for all citizens of the country to abide by.
+      </b></p> 
+      <h2 class="w3-wide"class="w3-wide" class="w3-opacity" style="font-style: Alfa Slab One;font-size: 30px;color: #0d09e6;"><b><i>Facts About Republic Day</i></b></h2>
+      <p class="w3-left-align w3-text-black"style="font-style: Alfa Slab One;font-size: 19.4px;"><b>
+        1). Between 1950 and 1954, the Republic Day parade was held at Irwin Stadium (now National Stadium), Kingsway, Red Fort, and Ramlila grounds.</b>
+      </p class="w3-left-align w3-text-black"style="font-style: Alfa Slab One;font-size: 19.4px;"><b>
+      <p class="w3-left-align w3-text-black"style="font-style: Alfa Slab One;font-size: 19.4px;"><b>
+        2). Republic Day celebrations have been held at Rajpath since 1955. Rajpath was once known as the Kingsway, in honour of India's then emperor, George V. The road was renamed Rajpath after independence, which also means King's Way in Hindi.
+      </b></p>
+      <p class="w3-left-align w3-text-black"style="font-style: Alfa Slab One;font-size: 19.4px;"><b>
+        3). Every year, the leader of a particular nation is invited to be the chief guest for the Republic Day parade. President Sukarno of Indonesia was the first to attend India's Republic Day celebrations as chief guest in 1950.
+      </b></p>
+      <p class="w3-left-align w3-text-black"style="font-style: Alfa Slab One;font-size: 19.4px;"><b>
+        4). The parade starts after the arrival of the President of India. The President's cavalier bodyguards salute the National Flag first. The National Anthem is played, followed by a 21-gun salute. The firing is, however, not done using 21 canons. It is done with seven canons of the Indian army known as '25-Ponders' that fire three rounds each.
+      </b></p>
+      <p class="w3-left-align w3-text-black"style="font-style: Alfa Slab One;font-size: 19.4px;"><b>
+        5). Each member of the army who takes part in the march must go through four layers of investigation. Aside from that, their arms are extensively inspected to ensure they are not carrying live bullets.
+      </b></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-white" id="Gallery">
+    <div class="body">
+    <div class="w3-container"style="background-image: https://wallpapers.oneindia.com/ph-1024x768/2016/01/republic-day-wallpapers-images-free-download-republic-day-wallpapers_145319232020.jpg;">
+      <div class="w3-center w3-padding-32">
+        <h2 class="w3-wide" style="font-style: Candal;font-size: 30px;color: #0d09e6;"><b>Photo Gallery</b></h2>  
+      <h2 class="w3-left-align w3-text-black" style="font-style: Alfa Slab One;font-size: 19.5px;">A picture speaks a thousand words and on a day when India breaks out in multiple radiant colours, the pictures are exceptional. Take a look at the images of the Republic Day Celebrations: </h2>
+      <div class="row">
+        <div class="column">
+          <img src="https://images.herzindagi.info/image/2023/Jan/74th-republic-day-celebration.jpg" alt="Snow" style="width:100%"height="35%">
+        </div>
+        <div class="column">
+          <img src="https://cdn.narendramodi.in/cmsuploads/0.21934000_1580026809_1155x548-glimpses-from-republic-day-celebrations-at-rajpath-new-delhi.jpg" alt="Snow" style="width:100%"height="35%">
+        </div>
+        <div class="column">
+          <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201701/republic_647_012617030656.jpg" alt="Snow" style="width:100%"height="35%">
+        </div>
+        <div class="column">
+          <img src="https://i.pinimg.com/474x/8c/d5/05/8cd505de4fb3709d932d4b74bf2a2fda.jpg" alt="Snow" style="width:100%"height="35%">
+        </div>
+        <div class="column">
+          <img src="https://static.pib.gov.in/WriteReadData/Gallery/PhotoGallery/2020/Jan/H2020012684752.JPG" alt="Snow" style="width:100%"height="35%">
+        </div>
+        <div class="column">
+          <img src="https://cdn.wionews.com/sites/default/files/styles/story_page/public/2022/01/25/235900-rdayy111.jpg" alt="Snow" style="width:100%"height="35%">
+        </div>
+        <div class="column">
+          <img src="https://static.india.com/wp-content/uploads/2022/01/Republic-Day-2022-For-the-first-time-in-history-Republic-Day-parade-will-start-half-an-hour-late.jpg" alt="Snow" style="width:100%"height="35%">
+        </div><div class="column">
+          <img src="https://img.republicworld.com/republic-prod/stories/promolarge/xhdpi/imagjxxbwutb4izn_1643182925.jpeg" alt="Snow" style="width:100%"height="35%">
+        </div>
+        <div class="column">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Republic_day_parade_%28India%29_montage.jpg/640px-Republic_day_parade_%28India%29_montage.jpg" alt="Snow" style="width:100%"height="35%">
+        </div>
+        <div class="column">
+          <img src="https://cdn.zeebiz.com/sites/default/files/styles/zeebiz_850x478/public/2022/01/26/173731-republic-day-celebrationreuters.jpg?itok=fKNuxv71" alt="Snow" style="width:100%"height="35%">
+        </div>
+        <div class="column">
+          <img src="https://images.moneycontrol.com/static-mcnews/2017/03/defence_tanks_soldiers_missile_army_parade_720.jpg?impolicy=website&width=770&height=431" alt="Snow" style="width:100%"height="35%">
+        </div>
+        <div class="column">
+          <img src="https://images.news18.com/ibnlive/uploads/2019/01/70th-Republic-Day-Celebrations-2.jpg?impolicy=website&width=0&height=0" alt="Snow" style="width:100%"height="35%">
+        </div>
+        <div class="column">
+          <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2019-01/18/full/1547794959-0521.jpg" alt="Snow" style="width:100%"height="35%">
+        </div>
+        <div class="column">
+          <img src="https://resize.indiatvnews.com/en/resize/newbucket/730_-/2019/01/army-during-r-day-parade-1548399593.jpg" alt="Snow" style="width:100%"height="35%">
+        </div>
+        <div class="column">
+          <img src="https://img.etimg.com/thumb/msid-50730691,width-640,resizemode-4/events/five-firsts-at-the-67th-republic-day-parade-in-delhi.jpg" alt="Snow" style="width:100%"height="35%">
+        </div>
+        <div class="column">
+          <img src="http://bsmedia.business-standard.com/_media/bs/img/article/2017-01/26/full/1485427386-8459.jpg" alt="Snow" style="width:100%"height="35%">
+        </div>
+        <div class="column">
+          <img src="https://www.eastcoastdaily.in/wp-content/uploads/2018/01/cover-17.jpg" alt="Snow" style="width:100%"height="35%">
+        </div>
+        <div class="column">
+          <img src="https://images.news18.com/ibnlive/uploads/2020/01/R-Day-1.jpg?impolicy=website&width=510&height=356" alt="Snow" style="width:100%"height="35%">
+        </div>
+        <div class="column">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Air_Force_Marching_Contingent_at_the_71st_Republic_Day_Celebrations%2C_2020.jpg" alt="Snow" style="width:100%"height="35%">
+        </div>
+        <div class="column">
+          <img src="https://media.istockphoto.com/id/1220575008/photo/italian-national-republic-day-air-show-aerobatic-team-frecce-tricolore-flying-over-altare.jpg?s=612x612&w=0&k=20&c=msZJ3eA2hIwrT9ctK-EBOiRz-Z1wqWQqkXDf76_YC7c=" alt="Snow" style="width:100%"height="35%">
+        </div>
+        <div class="column">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Altare_della_Patria_2022_%28cropped%29.jpg/640px-Altare_della_Patria_2022_%28cropped%29.jpg" alt="Snow" style="width:100%"height="35%">
+        </div>
+        <div class="column">
+          <img src="https://i.pinimg.com/originals/eb/91/92/eb919209e99b94801add759f6a587e34.jpg" alt="Snow" style="width:100%"height="35%">
+        </div>
+        <div class="column">
+          <img src="https://images.indianexpress.com/2016/01/republic-day-4801.jpg" alt="Snow" style="width:100%"height="35%">
+        </div>
+        <div class="column">
+          <img src="https://d2r2ijn7njrktv.cloudfront.net/IL/uploads/2019/04/21150259/PIB.jpg" alt="Snow" style="width:100%"height="35%">
+        </div>
+        <div class="column">
+          <img src="https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2022/01/26/b16a8e0870b9d2b29155bd1ffb2ad38f.jpg?quality=80&zoom=1&ssl=1" alt="Snow" style="width:100%"height="35%">
+        </div>
+        <div class="column">
+          <img src="https://webneel.com/wallpaper/sites/default/files/images/01-2014/4-republic-day-wallpaper.jpg" alt="Snow" style="width:100%"height="35%">
+        </div>
+        <div class="column">
+          <img src="https://dpsdurg.edu.in//downloads/other/n5e2e896159129.jpg" alt="Snow" style="width:100%"height="35%">
+        </div>
+        <div class="column">
+          <img src="https://images.tribuneindia.com/cms/gall_content/2017/1/2017_1$largeimg28_Saturday_2017_020057731.jpg" alt="Snow" style="width:100%"height="35%">
+        </div>
+        <div class="column">
+          <img src="https://www.5dariyanews.com/Uploads/2017/01/26/en-news-03243280-Ashmah-International-School-(4).jpg" alt="Snow" style="width:100%"height="35%">
+        </div>
+        <div class="column">
+          <img src="https://s01.sgp1.digitaloceanspaces.com/inline/910961-ozzzrjfgpp-1548515191.jpg" alt="Snow" style="width:100%"height="35%">
+        </div>
+        <div class="column">
+          <img src="https://www.deccanherald.com/sites/dh/files/styles/gallery_thumbnails/public/gallery_images/2022/01/24/Republic%20Day%20Parade%202022%20%2813%29.jpg" alt="Snow" style="width:100%"height="35%">
+        </div>
+        <div class="column">
+          <img src="https://cdn.siasat.com/wp-content/uploads/2022/01/2022_1img23_Jan_2022_PTI01_23_2022_000095B-scaled.jpg" alt="Snow" style="width:100%"height="35%">
+        </div>
+        <div class="column">
+          <img src="https://static.toiimg.com/photo/msid-67724313/67724313.jpg" alt="Snow" style="width:100%"height="35%">
+        </div>
+          <div class="column">
+            <img src="https://static.toiimg.com/thumb/msid-89132842/89132842.jpg?width=500&resizemode=4" alt="Snow" style="width:100%"height="35%">
+          </div>
+          <div class="column">
+            <img src="https://imagevars.gulfnews.com/2022/01/26/504464-01-02--Read-Only-_17e9590007a_original-ratio.jpg" alt="Snow" style="width:100%"height="35%">
+          </div>
+          <div class="column">
+            <img src="https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2018/01/26/Pictures/india-politics-republic-day_a0eba3be-0275-11e8-8651-33050e64100a.jpg" alt="Snow" style="width:100%"height="35%">
+          </div>
+          <div class="column">
+            <img src="https://imgk.timesnownews.com/WhatsApp_Image_2022-01-26_at_11.38.19_AM.jpeg" alt="Snow" style="width:100%"height="35%">
+          </div>
+          <div class="column">
+            <img src="https://drop.ndtv.com/albums/NEWS/republic-day-pa_637785423775375496/637785423775375496_640x480.jpeg"alt="Snow" style="width:100%"height="35%">
+          </div>
+          <div class="column">
+            <img src="https://www.mapsofindia.com/ci-moi-images/my-india/2016/01/67th-republic-day-of-india.jpg"alt="Snow" style="width:100%"height="35%">
+          </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+<!-- FREEDOM FIGHTERS section -->
+<div class="w3-white" id="FreedomFighter">
+  <div class="w3-container">
+    <div class="w3-center w3-padding-32">
+    <h2 class="w3-wide">FREEDOM FIGHTERS</h2>
+    <p class="w3-opacity" style="font-style: Alfa Slab One;font-size: 19.5px;"><i><b>Freedom Fighters were People who sacrificed their lives selflessly for the Freedom of their Country</b></i></p><br>
+    <p class="w3-left-align w3-text-black"style="font-style: Alfa Slab One;font-size: 19.4px;" ><b>
+      Freedom Fighters were those great leaders who sacrificed their lives with fearless courage to bring freedom to the Nation. They faced pains, exploitation, immense torture, and hardships to bring freedom. So, people considered them the epitome of patriotic people. British ruled over India for more than 200 years. Many Freedom Fighters adopted various ways of fighting against Britishers to attain freedom. Their unimaginable sacrifice, hardships, pains, and hard work gets an eternal salute from people.
+    </b>
+    </p>
+    <p class="w3-left-align w3-text-black"style="font-style: Alfa Slab One;font-size: 19.4px;">
+      <b> struggled a lot to make India free from Britishers and an independent country. The list of Freedom Fighters is endless. Some of them are known while others quietly sacrificed their life for the protection of their motherland. At present, whatever convenience and freedom we got in our life is just because of these freedom fighters. Some of the famous freedom fighters are find below</b>
+    </p>
+    </div>
+
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-third">
+        <img src="https://static.india.com/wp-content/uploads/2014/01/mahatma-gandhi1.jpg" alt="Photo by Meritt Thomas" style="width:95%"height="35%"class="w3-hover-opacity">
+        <div>
+          <p><b>1. Mahatama Gandhi</b></p>
+          <div class="comment more">
+             The immense sacrifices that Mohandas Karamchand Gandhi made for India earned him the title of “Father of the Nation”; he was born on October 2, 1869. Along with inspiring numerous other independence movements and human rights movements around the world, he not only helped lead India to independence but also played a significant role in its victory. India is recognized for embracing the concept of nonviolence thanks to Gandhi, popularly known as Bapu. He thought that nonviolent resistance and an unwillingness to cooperate with the British would be enough to bring about independence.
+            </div>
+        </div>
+      </div>
+      <div class="w3-third">
+        <img src="https://rrcafe.in/wp-content/uploads/2022/01/dsaj_5e29222f0bada-1024x580.jpg " alt="Photo by Humphrey Muleba" style="width:95%" height="35%" class="w3-hover-opacity">
+        <div>
+          <p><b>2. Subhas Chandra Bose</b></p>
+          <div class="comment more">
+           One of the most successful Indian nationalists in history was Subhash Chandra Bose. He was created in Cuttack on January 23, 1897. He was widely referred to as Netaji. He was a fervent nationalist, and his unwavering patriotism made him a hero. Bose belonged to the radical faction of the Indian independence movement. He served as the head of a radical young wing of Congress from the beginning of the 1920s to the end of 1930. He is believed to have died in an aviation accident on August 18, 1945, although the cause of his passing is still unknown.
+          </div>
+        </div>
+      </div>
+      <div class="w3-third">
+        <img src="http://images.catchnews.com/upload/2019/09/28/bhagat_singh_5122109_835x547-m_237852_730x419.jpg" alt="Photo by Marcos Ferreira" style="width:95%" height="35%" class="w3-hover-opacity">
+        <div>
+          <p><b>3. Bhagat Singh</b></p>
+          <div class="comment more">
+            On September 28, 1907, in Banga, Pakistan, Bhagat Singh was born. He was among the most extreme Indian liberation fighters. In the freedom struggle for India, he was a divisive but respected figure. His involvement in a plot to assassinate James Scott, a British police superintendent, in 1928 as vengeance for Lala Lajpat Rai’s demise was revealed. On March 23, 1931, the British executed this heroic Indian freedom fighter by hanging him at Lahore Central Jail in Lahore, Pakistan. He was only 23 years old at the time. He is well known by the name Shaheed Bhagat Singh.
+          </div>
+        </div>
+      </div>
+      <div class="w3-third">
+        <img src="https://www.newssamachar.com/wp-content/uploads/2021/04/Mangal-Pandey.jpeg" alt="Photo by Marcos Ferreira" style="width:95%" height="35%" class="w3-hover-opacity">
+        <div>
+          <p><b>4. Mangal Pandey</b></p>
+          <div class="comment more">
+            Mangal Pandey, a well-known Indian freedom fighter who was born on July 19th, 1827, is frequently seen as the forerunner of India’s first war for independence, the 1857 uprising against the British. As a soldier in the 34th Bengal Native Infantry regiment of the East India Company’s army, he led the Sepoy rebellion that ultimately resulted in the 1857 uprising. In anticipation of a Sepoy uprising, British officers killed him on April 8, 1857, at Barrackpore, ten days early.
+          </div>
+        </div>
+      </div>
+      <div class="w3-third">
+        <img src="https://feeds.abplive.com/onecms/images/uploaded-images/2022/06/18/77ae64c3b2cbf084e48c10e893416427_original.jpg?impolicy=abp_cdn&imwidth=640" alt="Photo by Marcos Ferreira" style="width:95%" height="35%" class="w3-hover-opacity">
+        <div>
+          <p><b>5. Rani Laxmi Bai</b></p>
+          <div class="comment more">
+           On November 19, 1828, the Queen of Jhansi Rani Laxmibai was born in Varanasi. She goes by the stage name Manu and goes by the name Manikarnika Tambe. She was one of the most tenacious soldiers in the Revolutionary War. She inspired numerous Indian women to fight for their country’s freedom, and she still inspires women to defend their rights today. She defended her fortress with her infant child when British troops invaded it in 1858. On June 18, 1858, in Gwalior, she perished in the Battle against a Huge Rose.</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-third">
+        <img src="https://rukminim1.flixcart.com/image/416/416/japoakw0/poster/n/g/f/medium-jawaharlal-nehru-poster-size-12-inch-x-18-inch-pack-of-1-original-imafy8cvydtbcz7v.jpeg?q=70" alt="Photo by Marcos Ferreira" style="width:95%" height="35%" class="w3-hover-opacity">
+        <div>
+          <p><b>6. Jawaharlal Nehru</b></p>
+          <div class="comment more">
+             He joined the 1916 Annie Besant-led Home Rule League movement. He was detained multiple times during the struggle for freedom, and between 1921 and 1945 he spent a total of 9 years behind bars. He was an active member of the United Province’s Non-Cooperation movement and served as its leader. He participated in the salt satyagraha as well. While the Indian National Congress desired dominion status, Jawaharlal Nehru and Subash Chandra Bose believed that the Indian National Congress’s ultimate goal should be complete independence, or Poorna Swaraj. On August 15, 1947, he took office as India’s first prime minister.
+           </div>
+        </div>
+      </div>
+      <div class="w3-third">
+        <img src="https://www.jatinverma.org/uploads/2019_11/81.jpg" alt="Photo by Marcos Ferreira" style="width:95%" height="35%" class="w3-hover-opacity">
+        <div>
+          <p><b>7. Lala Lajpat Rai</b></p>
+          <div class="comment more">
+            The Punjab Kesari, Lala Lajpat Rai, joined the Indian National Congress. He was one of the founding members of the 1894-founded Punjab National Bank. He established the Dayanand Anglo-Vedic School in Lahore in 1885. The Indian Home Rule League of America was established by him in New York in 1917. He established the Servants of People Society in Lahore in 1921 with the goal of recruiting and educating native missionaries to serve their country. He participated in demonstrations against the Jallianwala Bagh Massacre, the Rowlatt Act, and the partition of Bengal.
+          </div>  
+        </div>
+      </div>
+      <div class="w3-third">
+        <img src="https://aptinfo.in/wp-content/uploads/2020/01/Life-History-of-Bal-Gangadhar-Tilak-1280x720.png" alt="Photo by Marcos Ferreira" style="width:95%" height="35%" class="w3-hover-opacity">
+        <div>
+          <p><b>8. Bal Gangadhar Tilak</b></p>
+          <div class="comment more">
+            Lala Lajpat Rai, Bipin Chandra Pal, and Bal Gangadhar Tilak founded the Indian National Congress’ hardline wing. He started the Ganeshotsav and Shivaji Utsav celebrations in 1894. He spread nationalism among the populace through these two celebrations. He started the Ganeshotsav and Shivaji Utsav celebrations in 1894. He spread nationalism among the populace through these two celebrations. Through the two publications he founded, Mahratta (English) and Kesari (Marathi), he promoted the cause of national freedom and educated Indians about their illustrious past and rich cultural legacy. He introduced the Trisutri three-point agenda for national awakening, which stands for Swaraj, Swadeshi, and National Education.
+          </div>
+        </div>
+      </div>
+      <div class="w3-third">
+        <img src="https://i0.wp.com/velivada.com/wp-content/uploads/2012/04/jotiba-phule-e1491851513814.jpg?fit=990%2C527&ssl=1" alt="Photo by Marcos Ferreira" style="width:95%" height="35%" class="w3-hover-opacity">
+        <div>
+          <p><b>9. Jyotiba Phule</b></p>
+           <div class="comment more">
+              Jyotiba Phule founded India’s first girls’ school in August 1848, and it was located in Tatyasaheb Bhide’s home. Later, he opened two additional schools for girls and people from lower castes (Mahars and Mangs). He was an early supporter of women’s education in India because he thought that only education could alleviate social injustices. He founded the Satyashodhak Sama (Society of Truth-Seekers) in 1873 with the intention of enhancing the social rights and political access of the less fortunate segments of society.
+           </div>
+        </div>
+      </div>
+      <div class="w3-third">
+        <img src="https://rukminim1.flixcart.com/image/416/416/k186fm80/painting/f/r/j/cw-425-483-p-9x12-catalogwala-original-imafkucwnurxgm2d.jpeg?q=70" alt="Photo by Marcos Ferreira" style="width:95%"height="35%"class="w3-hover-opacity">
+        <div>
+          <p><b>10. Dr Bhimrao Ramji Ambedkar</b></p>
+            <div class="comment more">
+            Ambedkar was the father of the Indian Constitution because he was the Chairman of the  Drafting Committee of the Constitution of India. He was the one who made the significant rules and framework of the Constitution. He served as a lawmaker and became the first law minister of Independent India.Dr Bhimrao Ramji Ambedkar, also known as Babasaheb Ambedkar, played a significant role in framing the Constitution and thus is revered worldwide. Ambedkar was an academic scholar and determinant student. Dr Ambedkar was sensitive to the discrimination experienced by the Dalits of his community. He felt and lived these struggles and decided to bring changes to society. He lived for people, worked for people, and felt for people. He had a strong leadership among Dalits and wrote several journals on their behalf. We honour him by celebrating his birthday, April 14, as Ambedkar Jayanti.
+          </div>
+        </div>
+      </div>
+      <div class="w3-third">
+        <img src="https://media.newstrack.in/uploads/politics-news//Jun/29/big_thumb/dada-naroji_5d1736fd02c50.jpg" alt="Photo by Marcos Ferreira" style="width:95%" height="35%"class="w3-hover-opacity">
+        <div>
+          <p><b>11. Dadabhai Naroji</b></p>
+          <div class="comment more">
+            Together with Indians and retired British officers in London, he established the East India Association in 1866. The organisation advocated for Indians under British rule and brought up issues for consideration. Dadabhai Naoroji’s book, Poverty and Un-British rule in India, which exposed the economic exploitation of India by the British, were his most significant contribution. He opposed the 1878 Vernacular Press Act. He supported the inclusion of Indians in the House of Commons and the Indianization of bureaucracy.She played a very significant role in the Civil disobedience movement and the Quit India movement, for which she was even jailed...
+           </div>
+        </div>
+      </div>
+      <div class="w3-third">
+        <img src="https://i1.wp.com/www.assamvisual.com/wp-content/uploads/2022/03/Sarojini-Naidu.jpg" alt="Photo by Marcos Ferreira" style="width:95%" height="35%"class="w3-hover-opacity">
+        <div>
+          <p><b>12. Sarojini Naidu</b></p>
+          <div class="comment more">
+            Sarojini Naidu was born on February 13, 1879,She was also referred to as the “Nightingale of India” and was a renowned poet, independence warrior, and orator.n 1925, she was chosen to lead the Indian National Congress.She was appointed the first governor of the United Provinces (now Uttar Pradesh) following India’s independence, a position she held until her death in 1949. In India, March 2 is celebrated as Women’s Day.
+          </div>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Aboout India -->
+
+  <div class="w3-white" id="India">
+    <div class="w3-container">  
+      <div class="w3-center w3-padding-32">
+      <h2 class="w3-wide" style="font-style: Candal;font-size: 30px;" >ABOUT INDIA</h2>
+      <p class="w3-opacity" style="font-size:20px;"><i><b>INDEPENDENT NATION DECLARED IN AUGUST (INDIA)</b></i></p><br>
+      <p class="w3-left-align w3-text-black" style="font-style: Alfa Slab One;font-size: 19.5px;">
+        India is one of the oldest civilizations in the world with a kaleidoscopic variety and rich cultural heritage. It has achieved all-round socio-economic progress during the last 65 years of its Independence. India has become self-sufficient in agricultural production and is now one of the top industrialized countries in the world and one of the few nations to have gone into outer space to conquer nature for the benefit of the people. It covers an area of 32, 87,263 sq. km, extending from the snow-covered Himalayan heights to the tropical rain forests of the south. As the 7th largest country in the world, India stands apart from the rest of Asia, marked off as it is by mountains and the sea, which give the country a distinct geographical entity. Bounded by the Great Himalayas in the north, it stretches southwards and at the Tropic of Cancer, tapers off into the Indian Ocean between the Bay of Bengal on the east and the Arabian Sea on the west. As you travel, India offers a range of vast tourism choices, diverse in land and nature, people, tribes, cuisine, faiths, dance forms, music, arts, crafts, adventure, sport, spirituality, history; even these vary as you journey from one state to another. As a country, India has achieved all-round socio-economic progress in the last 70 years of independence. The change is clearly visible in the Tier I and Tier II cities. However, the fascinating aspect lies in the stark difference as you travel through the new and old parts of its cities. From world-class airports and hotels, luxurious shopping malls, restaurants, pubs and cafes to overcrowded streets and alleyways, in the same cities, filled with thousands of little shops offering every possible modern and ethnic product and native street food is a fascinating experience. 
+      </p>
+      </div>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-third">
+          <img src="https://www.linkpicture.com/q/desk_2.jpg" alt="Photo by Meritt Thomas" style="width:95%" height="42%"class="w3-hover-opacity">
+          <div>
+            <p style="font-style: Alfa Slab One;"><b>Intersting Fact in India</b></p>
+            </div>
+        </div>
+        <div class="w3-third">
+          <img src="https://www.ncertbooks.guru/wp-content/uploads/2021/03/neighbouring-countries-of-India.png" alt="Photo by Humphrey Muleba" style="width:95%" height="35%" class="w3-hover-opacity">
+          <div>
+            <p><b>List of Neighbouring Countries of India</b></p>
+            <div class="comment more">
+                  India shares its land border with seven countries and water border with two countries. They are, Afghanistan and Pakistan to the North-West, China, Bhutan, and Nepal to the north, Myanmar to the far East, Bangladesh to the east., and two water bordered countries are Sri Lanka (from the south-east), and Maldives (from the south-west).
+            </div>
+          </div>
+        </div>
+        <div class="w3-third">
+          <img src="https://www.linkpicture.com/q/desk-Copy.jpg" alt="Photo by Marcos Ferreira" style="width:95%" height="35%" class="w3-hover-opacity">
+          <div>
+            <p><b>List of union Territories of india 2022</b></p>
+            <div class="comment more">
+               Total 8 Union Territories is there Andaman & Nicobar,Chandigarh,Dadra, Nagar Habeli, Diu, Dhaman,Delhi,Jammu and Kashmir, Ladakh, Lakshadweep And Pudcherry. 
+          </div>
+          </div>
+        </div>
+        <div class="w3-third">
+          <img src="https://t3.ftcdn.net/jpg/00/42/09/98/360_F_42099891_6Sz9g70EoF2AQhogDZiFE9UQ2ncan1Pk.jpg" alt="Photo by Meritt Thomas" style="width:95%" height="35%" class="w3-hover-opacity">
+          <div>
+            <p><b>About Indian National Flag</b></p>
+            <div class="comment more">
+              The Indian National Flag symbolises national pride and is one of the most respected national symbols. The late Prime Minister Jawaharlal Nehru called it "a flag not only of freedom for ourselves but a symbol of freedom to all the people."
+              As per the Indian laws, the national flag is to be made up of khadi. The flag code of India governs the usage of the flag. Initially, use of the Indian flag by private citizens was prohibited, except on national days like Republic Day and Independence Day. But gradually, some changes were made by the Union Cabinet about the flag's use by private citizens. The code was amended about its usage for hoisting and its adaptation on other types of clothes.
+              Significance of Indian National Flag colours:- Saffron: Saffron is a symbol of courage and sacrifice. White: The white colour represents honesty, peace, and purity. It highlights the importance of maintaining peace in the country. Green: The green colour represents faith and chivalry. It is a symbol of prosperity, vibrancy, and life. Ashoka Chakra: The Ashoka Chakra or the Dharma Chakra (Wheel of Law) has 24 spokes and appears on a number of edicts of Ashoka.
+              History of Indian National Flag:- The Indian National Flag represents India's long struggle for freedom. It signifies the status of India as an independent republic. The flag came into being in its present form at the meeting of Constitutional Assembly on 22 July 1947. Since then it has served as the National Flag of the Dominion of India from 15 August 1947 to 26 January 1950 and, thereafter, as the national flag of the Republic of India. The Indian National Flag was designed by Pingali Venkayya and contains three equal strips of saffron, white and green.
+           </div>
+          </div>
+        </div>
+        <div class="w3-third">
+          <img src="https://i.pinimg.com/736x/fa/03/6c/fa036cd062132391e81f75715335d209.jpg" alt="Photo by Meritt Thomas" style="width:95%" height="35%" class="w3-hover-opacity">
+          <div>
+            <p><b>Independent India</b></p>
+            <div class="comment more">
+               India's moment of glory finally arrived on the midnight of 15 August 1947. People, delirious with joy, flooded the streets to welcome the dawn of a new era. And within the Assembly Hall, Jawaharlal Nehru rose to make his famous "tryst with destiny" speech. By the early hours of morning, as the clouds sent a light drizzle to acknowledge the awakening, independent India was all set to transform from a colonial society into a liberal polity.
+
+                Jawaharlal Nehru became independent India's first Prime Minister and Rajendra Prasad the country's first President.
+
+                The Indian Constitution was drawn up in a matter of four years. It sought to assimilate different linguistic regions and religious communities of India into a cohesive Nation-State while, at the same time, conferring substantial autonomy upon the diverse states of the Indian Union.The founding fathers, under the leadership of B R Ambedkar, based governance of the country upon the free choice of its citizens. The Legislature, the Executive and the Judiciary started functioning long before such systems were recognised by international thinkers.
+
+               India embarked upon planning and began to address the issues like land reforms, improvement of agricultural marketing techniques and irrigation facilities. Reducing dependency on the fickle monsoons was a major priority area since most of Indian agriculture is rain-fed.
+
+               All this required, in addition to planning, a good deal of research. Moving over to scientific research and development, India raised her agricultural production to a consistent growth rate of three percent per annum.
+           </div>
+          </div>
+        </div>
+        <div class="w3-third">
+          <img src="https://nriol.com/images/india_state_map.png" alt="Photo by Meritt Thomas" style="width:95%" height="35%" class="w3-hover-opacity">
+          <div>
+            <p><b>History Of India</b></p>
+            <div class="comment more">
+              India's earliest known civilization arose about 5,000 years ago on the Indus River in what is now Pakistan. Archaeologists uncovered the remains of two huge cities with brick houses, piped water, and sewer systems. Nobody knows why, but these cities, called Harappa and Mohenjo Daro, were abandoned in 1700 B.C.
+              The Aryan people were farmers from Central Asia who arrived in India around 1500 B.C. They spoke Sanskrit, one of the world's oldest known languages. The Vedic Scriptures, writings that form the basis of the Hindu religion, were written during the Aryan reign.
+              In the 200-year reign of the Gupta Empire, starting in the fourth century A.D., arts, crafts, and sciences flourished. During this time, the Indian astronomer Aryabhatta determined that the Earth revolved around the sun. This was long before the Western world accepted the theory.
+              Beginning in the 16th century, following a series of invasions by Muslim forces, a Mongol leader named Babur founded the Mongol Empire. The Mongols oversaw a golden age of art, literature, and architecture in India between 1527 and 1707. They built roads, mosques, gardens, and enormous tombs, including the grand Taj Mahal 
+              In the late 1400s, Europeans arrived in India and began setting up trading companies. In 1757, Britain gained control over most of the country. Uprisings against British rule began in 1856. In 1920, the famous Mahatma Gandhi began nonviolent protests to push the British out. In 1947, India had independence.
+            </div>
+            </p>
+          </div>
+        </div>
+        <div class="w3-third">
+          <img src="https://www.insightsonindia.com/wp-content/uploads/2017/05/culture1.jpg" alt="Photo by Marcos Ferreira" style="width:95%" height="35%" class="w3-hover-opacity">
+          <div>
+            <p><b>People Culture and Nature</b></p>
+            <div class="comment more">
+              PEOPLE & CULTURE :- 
+              Society throughout India is divided into social ranks, called castes. Caste is determined by birth and there is almost no way to change it. High castes include priests, landowners, and soldiers. So-called Untouchables have no caste and do the most menial jobs.
+              India is a very spiritual country. It has no official religion, but more than 80 percent of Indians are Hindu. About 13 percent are Muslim. Other religions include Buddhism, Sikhism, and Jainism, which all began in India.
+              NATURE :- 
+              For thousands of years, since the Hindu religion first evolved, respect for animal life has been an important part of Indians' beliefs. Cows in particular are sacred and cannot be harmed. They are even allowed to wander through city streets, which often causes traffic jams!
+              India's varied climate zones support about 65,000 animal species, including elephants, pythons, river dolphins, and rhinos, and 12,000 types of flowering plants. It is the only country in the world with both lions and tigers. It's also a bird watcher's paradise.
+              On the coast of the Bay of Bengal is the Sundarbans, the world's largest mangrove forest. Here, tigers swim in the same rivers as dolphins, sea turtles, sharks, and saltwater crocodiles. This unique landscape is constantly under threat as sea levels rise and humans hunt illegally and clear trees for firewood.
+              The Himalaya mountains provide a home for some of India's rarest animals and plants. The most elusive animal is the snow leopard. Bears and black buck live lower down, and in the northeast, the tiger and one-horned rhinoceros can be found.
+          </div>
+          </div>
+        </div>
+        <div class="w3-third name">
+          <img src="https://www.linkpicture.com/q/National-identity-of-elements.jpg" alt="Photo by Marcos Ferreira" style="width:95%" height="35%" class="w3-hover-opacity">
+          <div>
+            <p><b>National Identity Elements</b></p>
+            <div class="comment more">
+               There are 17 national symbols of India namely Tiranga, Jana Gana Mana, Saka Calendar, Vande Mataram, National Emblem of India, Mango, Ganga, Royal Bengal Tiger, Indian Banyan, Ganges River ,Dolphin, Indian Peacock, Indian Rupee, King Cobra, Indian Elephant, Lotus, Pumpkin and National Pledge. 
+             </div>
+          </div>
+        </div>
+        <div class="w3-third">
+          <img src="http://spbhakt2india.weebly.com/uploads/4/5/5/7/45578085/5700056_orig.jpg" alt="Photo by Marcos Ferreira" style="width:95%" height="35%" class="w3-hover-opacity">
+          <div>
+            <p><b>RELIGION IN INDIA</b></p>
+            <div class="comment more">
+               India is home to 1.4 billion people – almost one-sixth of the world's population – who belong to a variety of ethnicities and religions. While 94% of the world's Hindus live in India, there also are substantial populations of Muslims, Christians, Sikhs, Buddhists, Jains and adherents of folk religions.
+                According to some estimates, there are roughly 4,200 religions, churches, denominations, religious bodies, faith groups, tribes, cultures, movements, ultimate concerns, which at some point in the future will be countless.
+             </div>
+          </div>
+        </div>
+        <div class="w3-third">
+          <img src="https://cdnassets.hw.net/dims4/GG/8cf5e26/2147483647/resize/480x%3E/quality/90/?url=https%3A%2F%2Fcdnassets.hw.net%2F36%2Fcc%2Fcf5a85394ed8a17d6516977cf651%2Fadobestock-217387219.jpeg" alt="Photo by Marcos Ferreira" style="width:95%" height="35%" class="w3-hover-opacity">
+          <div>
+            <p><b>GOVERNMENT & ECONOMY</b></p>
+            <div class="comment more">
+               India's parliamentary government was inherited from the British. After independence in 1947, one party, the Congress Party, and one family, the Nehru family, dominated politics in India for decades. Now, however, many parties compete for elected positions. 
+               India's economy is growing so fast that experts predict it will soon become one of the world's leading markets. Indians are hard workers. And though many are poorly educated, there are many others who are highly trained college graduates.
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="w3-white" id="Facts">
+  <div class="w3-container w3-padding-32">
+    <div class="w3-center w3-padding-32">
+<h2 class="w3-wide">DONATE BLOOD</h2>
+ <p class="w3-opacity w3-wide" style="font-size:20px;font-weight:5px"><i><b>Donate Blood - Celebrate this Republic Day by Saving Lives</b></i></p><br>
+<p class=" w3-text-black w3-left-align" style="font-size:16px; font-family:Courier New">
+  Blood cannot be manufactured and there is a constant requirement for hospitals to source blood to take care of patients. Blood is typically required by people who meet with accidents, who have to undergo surgeries or who have specific medical conditions requiring transfusions. Donating blood is a very easy way to help save lives.
+      </p>
+      <p class=" w3-text-black w3-left-align" style="font-size:large; font-family:Courier New"><b>Here are some facts about donating blood.</b></p>
+      <p class=" w3-text-black w3-left-align" style="font-size:medium; font-family:Courier New">* Each time you donate blood you will be able to donate around 300 - 450 ml (1 unit) of blood which is less than 1/10th of the total volume of blood in your body.</p>
+      <p class=" w3-text-black w3-left-align" style="font-size:medium; font-family:Courier New">* You can help up to 3 different people with the 1 unit of blood that you donate</p>
+      <p class=" w3-text-black w3-left-align" style="font-size:medium; font-family:Courier New">* The process of blood donation is a painless process (well almost but for the needle prick)</p>
+      <p class=" w3-text-black w3-left-align" style="font-size:medium; font-family:Courier New">* The process of blood donation is a very safe procedure and uses sterilized equipment</p>
+      <p class=" w3-text-black w3-left-align" style="font-size:medium; font-family:Courier New">* Body will recover the lost fluid in a few hours.Body will recover Red Blood Cells (RBC) in around 60 days</p>
+      <p class=" w3-text-black w3-left-align" style="font-size:medium; font-family:Courier New">* You will not feel weak / tired after blood donation. All you have to do is to drink enough water to recover the lost fluid.</p>
+      <p class="w3-text-black w3-left-align" style="font-size:medium; font-family:Courier New">* A healthy person can donate blood safely once every 3 months</p>
+      <p class=" w3-text-black w3-left-align" style="font-size:medium; font-family:Courier New">* Even if you do not donate blood your RBC has a lifetime of only around 100 - 120 days and is being continuously replenished by the body.</p>
+      <p class=" w3-text-black w3-left-align" style="font-size:medium; font-family:Courier New">* You can donate blood and get out in approximately an hour.</p>
+      <p class="w3-text-black w3-left-align" style="font-size:medium; font-family:Courier New">* Once you donate blood and you or your close ones need blood later for any situation you will be given priority allocation of blood from the blood bank. You will be given a certificate for this.</p>
+      <p class=" w3-text-black w3-left-align" style="font-size:medium; font-family:Courier New">blood bank are very friendly and they would be happy to share more information about blood donation and they will also be able to answer any questions you may have around blood donation. Even if you are not sure whether you would want to donate blood we would invite you to visit the blood bank with us and get to know more about blood donation and perhaps donate once your questions / concerns are addressed.</p>
+      <p class=" w3-text-black w3-left-align"></p>
+      <p class=" w3-text-black w3-left-align" style="font-size:medium; font-family:Courier New">Remember - Donating blood saves lives</p>
+    </div>
+      </div>
+    </div>
+</div>
+
+<div class="w3-white" id="Register">
+  <div class="w3-container">  
+    <div class="w3-flex w3-padding-3">
+<div class="input">
+  <p><em>.</em></p>
+  <h3>Register!</h3>
+  <form method="POST" action="/store" action="/action_page.php" onsubmit="myFunction()">
+    <tr>
+      <td>Name</td>
+      <td><input type="text" name="Name"/></td>	
+      </tr>
+      <tr>
+      <td>Contact Number</td>
+      <td><input type="text" name="Contact_Number"/></td>	
+      </tr>
+      <tr>
+      <td>Email Adress</td>
+      <td><input type="text" name="Email_Adress"/></td>	
+      </tr>
+      <tr>
+        <td>Adress</td>
+        <td><input type="text" name="Adress"/></td>	
+        </tr>
+      <tr>
+      <td>Blood_Group</td>
+      <td><input type="text" name="Blood_Group"/></td>	
+      </tr>
+      <tr>
+        <td>Message</td>
+      <td><input type="text" name="Message"/></td>	
+      </tr>
+      <tr> 
+      <td><input type="submit" name="send" value="Register"/></td>	
+      </tr>
+      </table>
+  </form>
+</div>
+    </div>
+</div>
+
+  <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+  <footer class="w3-container w3-pale-red w3-center w3-margin-top">
+    <p>ADRESS</p>
+    <p>Kammanahalli Bangalore Contact Number-7888877777</p>
+    <p>Mail Id ;-  Sharathuc1111@gmail.com</p>
+    <p>Find us on social media.</p>
+    <i class="fa fa-facebook-official "></i>
+    <i class="fa fa-instagram "></i>
+    <i class="fa fa-snapchat "></i>
+    <i class="fa fa-pinterest-p "></i>
+    <i class="fa fa-twitter "></i>
+    <i class="fa fa-linkedin"></i>
+    <p class="w3-small">This website was made by Sharat! </p> 
+    <button type="button" class="collapsible">CREDINTIAL</button>
+        <div class="content">
+          <p>byjus.com,Un Acadamy,Hindhustan Times,Knowindia, etc........
+              ...</p>
+        </div>
+  <!-- End footer -->
+  </footer>
+
+<script>
+$(document).ready(function() {
+	var showChar = 100;
+	var ellipsestext = "...";
+	var moretext = "Read more";
+	var lesstext = "Read less";
+	$('.more').each(function() {
+		var content = $(this).html();
+
+		if(content.length > showChar) {
+
+			var c = content.substr(0, showChar);
+			var h = content.substr(showChar-1, content.length - showChar);
+
+			var html = c + '<span class="moreelipses">'+ellipsestext+'</span>&nbsp;<span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">'+moretext+'</a></span>';
+
+			$(this).html(html);
+		}
+
+	});
+
+	$(".morelink").click(function(){
+		if($(this).hasClass("less")) {
+			$(this).removeClass("less");
+			$(this).html(moretext);
+		} else {
+			$(this).addClass("less");
+			$(this).html(lesstext);
+		}
+		$(this).parent().prev().toggle();
+		$(this).prev().toggle();
+		return false;
+	});
+});
+
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+
+function myFunction() {
+  alert("Thank you for taking the time and priority to donate blood location and time we will let you know as soon as possible. As well we will use your detailes for future when blood needed thanks again..");
+}
+</script>
+
+</body>
+</html>
